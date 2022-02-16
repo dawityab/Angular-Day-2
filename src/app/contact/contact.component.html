@@ -1,0 +1,32 @@
+<div class="container-fluid ">
+<div class="row">
+<div class=" text-center">
+<form [formGroup]="info" (ngSubmit)="onSubmit()" class="forms-container">
+    <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Name
+        <input type="email"   placeholder="Enter email" class="input-field" formControlName="name">
+        </label>
+    </div>
+    <div class="mb-3 mt-3">
+        <label for="age" class="form-label">Age
+        <input type="number" placeholder="Enter Age" class="input-field" formControlName="age">
+        </label>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="gender" class="form-label">Gender
+        <input type="text"   placeholder="Enter gender" class="input-field" formControlName="gender">
+        </label>
+      </div>
+      <div class="mb-3 mt-3">
+        <label for="status" class="form-label">Status
+        <input type="text"  placeholder="Enter status" class="input-field" formControlName="status">
+        </label>
+      </div>
+    
+
+<button type="submit" class="btn btn-success">Submit</button>
+</form>
+</div>
+</div>
+</div>
+

@@ -1,0 +1,67 @@
+
+<div class="container">
+
+  
+              
+            <div class="row card-container" > 
+                <form [formGroup]="car" (ngSubmit)="onSubmit()" class="forms-container">
+                   
+                        <label for="id" class="form-label">Id
+                        <input type="number"   placeholder="Enter car id" class="input-field" formControlName="id">
+                        </label>
+                   
+                    
+                        <label for="naem" class="form-label">Name
+                        <input type="text"   placeholder="Enter car brand" class="input-field" formControlName="name">
+                        </label>
+                   
+                    
+                        <label for="model" class="form-label">Model
+                        <input type="text" placeholder="Enter model" class="input-field" formControlName="model">
+                        </label>
+                     
+                      
+                        <label for="seat" class="form-label">Seats
+                        <input type="number"   placeholder="Enter number" class="input-field" formControlName="seat">
+                        </label>
+                     
+                    
+                        <label for="year" class="form-label">Year
+                        <input type="text"  placeholder="Enter produced year" class="input-field" formControlName="year">
+                        </label>
+
+                        <label for="image" class="form-label">Image
+                        <input type="text"  placeholder="Enter Image of the car" class="input-field" formControlName="image">
+                        </label>
+                        <button type="submit" class="btn btn-success">Submit</button>
+    
+              </form>  
+             
+                <h4  id="success-Info" role="alert"></h4>
+              
+            
+                <h4  id="reject-Info" role="alert"></h4>
+              
+              
+             
+              
+            <div class="col-lg-4 col-md-6 col-sm-12" *ngFor="let car of cars">
+               
+                <div class="card"  style="width: 18rem;">
+                    <img src="{{car.image}}" class="card-img-top" alt="{{car.name}}">
+                    <div class="card-body">
+                      <h5 class="card-title"> {{car.name}}</h5>
+                      <p class="card-text">{{ car.model}}</p>
+                      <p class="card-text">Seats - {{ car.seat}}</p>
+                    
+                    </div>
+               
+                </div>
+            </div>
+        </div>   
+            
+</div>
+
+
+   
+

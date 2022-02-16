@@ -1,0 +1,10 @@
+.bg-light{
+    background: url("../../assets/hero-image.jpg");
+    color: rgb(158, 58, 58);
+    background-size: cover;
+    height: fit-content;
+    font-family: 'Archivo Black', sans-serif;
+    width: 100%;
+    padding: 30px;
+
+}
